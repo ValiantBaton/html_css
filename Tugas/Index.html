@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css1/styles.css">
+    <!-- Bootstrap CSS for modal and other components -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<body class="my-custom-body">
+    <div class="container">
+        <div class="header">
+            <a href="Index.html"><img src="img/download.png" alt="Logo" class="logo"></a>
+            <h1>Welcome</h1>
+            <nav>
+                <a href="#about" class="btn btn-primary">Tentang</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Kontak
+                </button>
+                <a href="#info" class="btn btn-primary">Info</a>
+            </nav>
+            <div class="login-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <h1 align ="center">Recomendation</h1>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/images (1).jpeg" class="d-block w-100" alt="slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Harry Potter and the Order of the Phoenix</h5>
+                        <p>2007 ‧ Family/Fantasy ‧ 2h 18m</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/download (1).jpeg" class="d-block w-100" alt="slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Harry Potter and the Philosopher's Stone</h5>
+                        <p>2001 ‧ Family/Fantasy ‧ 2h 32m</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/download.jpeg" class="d-block w-100" alt="slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Harry Potter and the Half-Blood Prince</h5>
+                        <p>2009 ‧ Family/Fantasy ‧ 2h 33m</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="main-content">
+            <h1>Selamat Menonton</h1>
+            <div class="posters">
+                <a href="#" class="poster" style="background-image: url('https://img.posterstore.com/zoom/wb0101-8harrypotter-thephilosophersstoneno150x70.jpg');"></a>
+                <a href="#" class="poster" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNnPhQyD2Mx5Fu4tJDD4TxBVlqoBxqfHz5Q&s');"></a>
+                <a href="#" class="poster" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqiw_53r83nADb1vy_nJnwgL3ja5RQNHOigw&s');"></a>
+                <a href="#" class="poster" style="background-image: url('https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p90599_p_v12_bb.jpg');"></a>
+                <a href="#" class="poster" style="background-image: url('https://i.pinimg.com/originals/a7/82/e2/a782e2147c431b4d9874b4eac0dad894.jpg');"></a>
+                <a href="#" class="poster" style="background-image: url('https://i.ebayimg.com/images/g/aBwAAOSwYDVfDf6o/s-l1600.jpg');"></a>
+            </div>
+        </div><hr>
+        <!-- Table -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Populer</th>
+                    <th scope="col">Release</th>
+                    <th scope="col">Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Harry Potter and the Philosopher's Stone</td>
+                    <td>November 16, 2001</td>
+                    <td>Fantasy</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Harry Potter and the Prisoner of Azkaban</td>
+                    <td>May 31, 2004</td>
+                    <td>Fantasy</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Harry Potter and the Chamber of Secrets</td>
+                    <td>November 15, 2002</td>
+                    <td>Fantasy</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer">
+            &copy; 2024 Your Name. All rights reserved.
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
